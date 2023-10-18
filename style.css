@@ -1,0 +1,398 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Spartan", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    width: 100%;
+}
+
+/* General styling */
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+  
+h2 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #2D314D;
+}
+  
+h4 {
+    font-size: 30px;
+    line-height: 64px;
+    color: #2D314D;
+}
+h5{
+    margin: 20px 0 20px;
+}
+  
+h6 {
+    font-weight: 700;
+    font-size: 12px;
+}
+  
+p {
+    font-size: 18px;
+    color: #9597A5;
+    line-height: 28px;
+}
+
+.main{
+    width: 90%;
+    margin: 0 auto;
+}
+  /* fixed header */
+#header{
+    padding: 0px 0px;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.main-navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+#navbar{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+  
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(151, 151, 151);
+    transition: 0.3s ease;
+}
+#navbar li a.active::after,
+#navbar li a:hover::after {
+  content: "";
+  width: 70%;
+  height: 2px;
+  background-color: #088178;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+button.normal{
+    width: 162px;
+    height: 44px;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 8px;
+    color: #fff;
+    background: linear-gradient(170deg, #36DB63, #2AB6D9);
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+/* first page */
+#nextgen{
+background-size: cover;
+}
+.intro{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 10px ;
+}
+#firsttext{
+    font-size: 10px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+#firsttext .main {
+    padding-left: 50px;
+}
+.image{ 
+    width: 50%;
+}
+.image img{
+    width: 100%;
+    background-color: none;
+}
+
+/* why us section */
+#why{
+    background-color: #F4F5F7;
+    width: 100%;
+    
+}
+.main{
+    padding: 30px 20px 20px;
+}
+#whyus{
+    padding-left: 0px;
+}
+.bank{
+    display: block;
+}
+#why .bank{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    align-items: flex-start;
+}
+.bank-details p{
+    font-size: 16px;
+}
+.bank-details{
+    width: 25%;
+    padding: 20px 20px;
+    align-items: start;
+}
+
+/* latest article */
+
+#article{
+    background-color: #F2F2F2;
+}
+.article-details{
+    padding: 50px 0px 70px;
+    align-items: start;
+}
+
+.article-con{
+    display: flex;
+    flex-wrap: wrap;
+}
+.con{
+    padding: 20px;
+    width: 25%;
+    align-items: center;
+}
+.con:first-child{
+    padding-left: 0;
+}
+.con img{
+    width: 100%;
+}
+.con h6{
+    padding-top: 20px;
+    color: #9597A5;
+    font-size: 10px;
+}
+.con h5{
+    font-size: 16px;
+}
+.con p{
+    font-size: 13px;
+}
+.inner-con{
+    background-color: white;
+    padding: 20px;
+}
+
+/* footer */
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+#contact{
+    padding: 30px 0px;
+    background-color: #2D314D;
+    justify-content: space-between;
+}
+.bottom{
+    display: flex;
+}
+.col{
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-first{
+    padding-left: 0px;
+}
+.col .icon{
+    margin-top: 70px;
+    color: #fff;
+}
+.col-easy li{
+    list-style: none;
+    line-height: 26px;
+    padding: 10px 40px;
+    position: relative;
+  }
+.col-easy li a{
+    text-decoration: none;
+    font-size: 13px;
+    color: white;
+    transition: 0.3s ease;
+}
+.col-easy li a:hover{
+    color: #088178;
+}
+#col-button{
+    padding-left: 0;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+}
+#col-button p{
+    font-size: 16px;
+}
+
+/* Mobile */
+#mobile{
+    display: none;
+    align-items: center;
+}
+
+
+#close{
+    display: none;
+}
+
+@media (max-width: 758px){
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 70vh;
+        width: 300px;
+        background-color: #fff;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+      }
+    
+    #navbar.active{
+        right: 0px;
+    }
+
+    #navbar li{
+        margin-bottom: 25px;
+    }
+    
+    #mobile{
+        display: flex;
+        align-items: center;
+    }
+      
+    #mobile i{
+        color: #1a1a1a;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+    
+    #close{
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #222;
+        font-size: 24px;
+    }
+    
+    #header {
+        width: 100%;
+        padding: 10px 0;
+        display: block;
+    }
+    #header .normal{
+        display: none;
+    }
+    .main .main-navbar.normal{
+        display: none;
+    }
+    .intro{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #nextgen {
+        padding: 0px;
+        background-position: 55%;
+      }
+    .main{
+        width: 100%;
+    }  
+    #firsttext{
+        font-size: 10px;
+        width: 100%;
+        text-align: center;
+    }
+    .image{ 
+        width: 100%;
+    }
+    .image img{
+        width: 100%;
+        background-color: none;
+    }
+    #whyus{
+        text-align: center;
+    }
+    .bank{
+        display: flex;
+        flex-direction: column;
+    }
+    .bank-details{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    .article-con{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .con{
+        padding: 20px;
+        width: 100%;
+        align-items: center;
+    }
+    .bottom{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .col{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .col-easy{
+        text-align: center;
+    }
+    .col-easy li{
+    list-style: none;
+    line-height: 26px;
+    padding: 10px 40px;
+    position: relative;
+     }
+     .icon i{
+        padding: 0 5px;
+     }
+}
